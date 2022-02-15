@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root {
+  --primary-color: hsl(31, 77%, 52%);
+  --secondary-color: hsl(184, 100%, 22%);
+  --accent-color: hsl(179, 100%, 13%);
+  --paragraph-color: hsla(0, 0%, 100%, 0.75);
+  --heading-color: hsl(0, 0%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--heading-color);
+  font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+h1 {
+  font-family: "Big Shoulders Display", cursive, Arial, Helvetica, sans-serif;
+  color: var(--heading-color);
+  font-size: 2rem;
+  font-weight: 700;
+}
+p {
+  color: var(--paragraph-color);
+  font-weight: 400;
+}
+
+/* Buttons */
+.btn {
+  padding: 2rem 4rem;
+  border: 0;
+  border-radius: 7rem;
+  background-color: var(--heading-color);
+  cursor: pointer;
+}
+.btn--primary {
+  color: var(--primary-color);
+}
+.btn--secondary {
+  color: var(--secondary-color);
+}
+.btn--accent {
+  color: var(--accent-color);
+}
+
+.btn--primary:hover {
+  border: 2px solid var(--heading-color);
+  color: var(--heading-color);
+  background: var(--primary-color);
+}
+.btn--secondary:hover {
+  border: 2px solid var(--heading-color);
+  color: var(--heading-color);
+  background: var(--secondary-color);
+}
+.btn--accent:hover {
+  border: 2px solid var(--heading-color);
+  color: var(--heading-color);
+  background: var(--accent-color);
+}
