@@ -114,8 +114,8 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 85rem;
-    height: 50rem;
+    width: 110rem;
+    height: 60rem;
     border-radius: 5px;
     background: var(--heading-color);
     box-shadow: 0 0 30px 10px rgba(25, 25, 55, 0.2);
