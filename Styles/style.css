@@ -30,7 +30,6 @@ body {
 h1 {
   font-family: "Big Shoulders Display", cursive, Arial, Helvetica, sans-serif;
   color: var(--heading-color);
-  font-size: 2rem;
   font-weight: 700;
 }
 p {
@@ -40,7 +39,7 @@ p {
 
 /* Buttons */
 .btn {
-  padding: 2rem 4rem;
+  padding: 1.5rem 4rem;
   border: 0;
   border-radius: 7rem;
   background-color: var(--heading-color);
@@ -70,4 +69,66 @@ p {
   border: 2px solid var(--heading-color);
   color: var(--heading-color);
   background: var(--accent-color);
+}
+
+/* section grid */
+.container {
+  height: 150rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container--main .card--one,
+.container--main .card--two,
+.container--main .card--three {
+  width: 25rem;
+  padding: 4rem;
+}
+.container--main .card--one {
+  background: var(--primary-color);
+}
+.container--main .card--two {
+  background: var(--secondary-color);
+}
+.container--main .card--three {
+  background: var(--accent-color);
+}
+.card--one {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card--three {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.description .btn {
+  margin: 4rem 0 3rem 0;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    height: 100vh;
+  }
+  .container--main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 85rem;
+    height: 50rem;
+    border-radius: 5px;
+    background: var(--heading-color);
+    box-shadow: 0 0 30px 10px rgba(25, 25, 55, 0.2);
+    transition: all 0.3s ease;
+  }
+  .container--main .card--one {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+  }
+  .container--main .card--three {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0;
+  }
 }
